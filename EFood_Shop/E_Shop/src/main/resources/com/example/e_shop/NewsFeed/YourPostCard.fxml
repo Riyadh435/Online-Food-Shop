@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_form" prefHeight="252.0" prefWidth="464.0" stylesheets="@PostCard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e_shop.NewsFeed.YourPostCard">
+    <children>
+        <Label fx:id="full_name" layoutX="72.0" layoutY="11.0" prefHeight="22.0" prefWidth="111.0" text="Riyadh Touhid">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="post_time" layoutX="74.0" layoutY="36.0" prefHeight="18.0" prefWidth="140.0" text="Time 6:30 PM" />
+        <ImageView fx:id="prod_pic" fitHeight="168.0" fitWidth="149.0" layoutX="239.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+        <VBox fx:id="vbox" layoutX="12.0" layoutY="195.0" prefHeight="44.0" prefWidth="413.0" />
+        <Label fx:id="post_title" layoutX="28.0" layoutY="84.0" prefHeight="0.0" prefWidth="198.0" text="Title">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Circle fx:id="mycircle" fill="DODGERBLUE" layoutX="39.0" layoutY="36.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="416.0" layoutY="17.0" mnemonicParsing="false" onAction="#PostDeleteBtn" prefHeight="32.0" prefWidth="18.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #E21B70;" styleClass="custom-button">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

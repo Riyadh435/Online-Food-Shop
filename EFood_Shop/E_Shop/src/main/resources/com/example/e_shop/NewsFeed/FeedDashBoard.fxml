@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="758.0" style="-fx-background-color: #D2D7F7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e_shop.NewsFeed.FeedDashBoard">
+   <children>
+      <AnchorPane layoutX="41.0" layoutY="56.0" prefHeight="578.0" prefWidth="690.0" style="-fx-background-color: rgba(0, 0, 0, 0.4); -fx-background-radius: 15 15 15 15;">
+         <children>
+            <AnchorPane fx:id="AddPostForm" layoutX="20.0" layoutY="28.0" prefHeight="516.0" prefWidth="669.0" visible="false">
+               <children>
+                  <Button fx:id="upload_review_btn" layoutX="34.0" layoutY="410.0" mnemonicParsing="false" onAction="#AddPost" prefHeight="38.0" prefWidth="147.0" styleClass="custom-button" stylesheets="@../Buttons.css" text="Upload Post">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+                  <ImageView fx:id="prod_image" fitHeight="211.0" fitWidth="200.0" layoutX="456.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="image_imp_btn" layoutX="503.0" layoutY="308.0" mnemonicParsing="false" onAction="#ImportBtn" prefHeight="30.0" prefWidth="98.0" styleClass="custom-button" text="select image">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <TextArea fx:id="prod_review_text" layoutX="35.0" layoutY="192.0" maxHeight="241.0" maxWidth="363.0" prefHeight="182.0" prefWidth="363.0" promptText="Enter your text">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </TextArea>
+                  <Label layoutX="35.0" layoutY="162.0" prefHeight="6.0" prefWidth="86.0" text="Enter Post">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="27.0" prefHeight="30.0" prefWidth="219.0" text="Add Your post here">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="81.0" prefHeight="22.0" prefWidth="86.0" text="Enter Post">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="post_title" layoutX="35.0" layoutY="109.0" prefHeight="38.0" prefWidth="262.0" promptText="Enter title">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font></TextField>
+               </children></AnchorPane>
+            <AnchorPane fx:id="NewsFeedForm" layoutX="48.0" layoutY="5.0" prefHeight="566.0" prefWidth="584.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 15 15 15 15;">
+               <children>
+                  <AnchorPane layoutX="50.0" layoutY="8.0" prefHeight="542.0" prefWidth="470.0">
+                     <children>
+                        <ScrollPane fx:id="NewsFeedScrollPane" layoutX="-15.0" layoutY="-15.0" prefHeight="542.4" prefWidth="470.4" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <GridPane fx:id="gridPane" prefHeight="13.0" prefWidth="77.0" style="-fx-background-color: transparent;">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="YourPostForm" layoutX="48.0" layoutY="3.0" prefHeight="566.0" prefWidth="584.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 15 15 15 15;" visible="false">
+               <children>
+                  <AnchorPane layoutX="34.0" layoutY="8.0" prefHeight="542.0" prefWidth="520.0">
+                     <children>
+                        <ScrollPane layoutX="-8.0" layoutY="14.0" prefHeight="542.4" prefWidth="470.4" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <GridPane fx:id="yourGrid" prefHeight="13.0" prefWidth="77.0" style="-fx-background-color: transparent;">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <Button fx:id="NewsFeed_Btn" layoutX="428.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="86.0" styleClass="customForItem-Buttons" text="NewsFeed" />
+      <Button fx:id="YourPost_Btn" layoutX="522.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchForm" styleClass="customForItem-Buttons" text="Your post" />
+      <Button fx:id="AddPost_Btn" layoutX="609.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="86.0" styleClass="customForItem-Buttons" text="Add post" />
+      <Button layoutX="85.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="27.0" style="-fx-background-radius: 30 30 30 30; -fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/icon/icons8-refresh-26.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+   <stylesheets>
+      <URL value="@FeedDashBoard.css" />
+      <URL value="@../Buttons.css" />
+   </stylesheets>
+</AnchorPane>

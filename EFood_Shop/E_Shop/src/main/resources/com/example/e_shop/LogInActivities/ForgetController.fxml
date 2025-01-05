@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #D2D7F7;" stylesheets="@../Buttons.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e_shop.LogInActivities.ForgetController">
+    <children>
+        <AnchorPane focusTraversable="true" layoutX="581.0" layoutY="56.0" prefHeight="587.0" prefWidth="418.0" style="-fx-background-color: rgba(0, 0, 0, 0.4);">
+            <children>
+                <TextField fx:id="yourEmail" layoutX="71.0" layoutY="118.0" prefHeight="38.0" prefWidth="250.0" promptText="sample@gmail.com" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 3 0; -fx-text-fill: white;">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                    </font></TextField>
+                <Label layoutX="75.0" layoutY="98.0" prefHeight="19.0" prefWidth="36.0" text="Email" textFill="WHITE">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="148.0" layoutY="541.0" prefHeight="22.0" prefWidth="54.0" text="Back to" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="16.0" />
+               </font></Label>
+                <AnchorPane fx:id="OtpSubmitForm" layoutX="75.0" layoutY="229.0" prefHeight="103.0" prefWidth="270.0" style="-fx-background-color: transparent;">
+                    <children>
+                        <TextField fx:id="OtpInput" layoutX="15.0" layoutY="39.0" prefHeight="30.0" prefWidth="130.0" promptText="   5 digit otp" style="-fx-background-color: transparent; -fx-border-color: #0e6d47; -fx-border-width: 1 1 1 1; -fx-border-radius: 6 6 6 6; -fx-text-fill: white;">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font></TextField>
+                        <Label layoutX="18.0" layoutY="14.0" prefHeight="20.0" prefWidth="74.0" text="Enter Otp" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font></Label>
+                        <Button fx:id="OtpConfirm" layoutX="177.0" layoutY="39.0" mnemonicParsing="false" onAction="#ConfirmOtp" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #0e6d47; -fx-background-radius: 8 8 8 8;" text="Confirm" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Button>
+                        <Label fx:id="timer" layoutX="163.0" layoutY="15.0" prefHeight="19.0" prefWidth="36.0" textFill="#064612">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="ConfirmUserForm" layoutX="71.0" layoutY="233.0" prefHeight="96.0" prefWidth="270.0" style="-fx-background-color: transparent;" visible="false">
+                    <children>
+                        <Button fx:id="sendOtp" layoutX="175.0" layoutY="35.0" mnemonicParsing="false" onAction="#sendOTPBtn" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #0e6d47; -fx-background-radius: 10 10 10 10;" text="Send Otp" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font></Button>
+                        <Label layoutX="14.0" layoutY="45.0" prefHeight="20.0" prefWidth="146.0" text="Are you sure to send " textFill="#1803d4">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font></Label>
+                        <Label fx:id="userNameFound" layoutX="85.0" layoutY="12.0" prefHeight="20.0" prefWidth="118.0">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="63.0" prefHeight="18.0" prefWidth="118.0" text=" otp in your email ?" textFill="#1803d4">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font></Label>
+                        <Label layoutX="8.0" layoutY="12.0" prefHeight="20.0" prefWidth="74.0" text="Username:" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Button layoutX="335.0" layoutY="120.0" mnemonicParsing="false" onAction="#EmailVerifcationButton" prefHeight="35.0" prefWidth="60.0" styleClass="custom-button" text="Search" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Button>
+                <AnchorPane fx:id="PasswordInputForm" layoutX="63.0" layoutY="219.0" prefHeight="175.0" prefWidth="278.0" style="-fx-background-color: transparent;" visible="false">
+                    <children>
+                        <PasswordField fx:id="newPassword" layoutX="5.0" layoutY="36.0" onKeyTyped="#typePassword" prefHeight="38.0" prefWidth="250.0" promptText="Enter new password" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 3 0; -fx-text-fill: white;">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font></PasswordField>
+                        <Label layoutX="8.0" layoutY="16.0" prefHeight="19.0" prefWidth="106.0" text="New password" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="passwordShowLabel" layoutX="22.0" layoutY="82.0" prefHeight="16.0" prefWidth="182.0" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="11.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="passwordAlert" layoutX="210.0" layoutY="82.0" prefHeight="18.0" prefWidth="46.0">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ToggleButton fx:id="toggleButton" layoutX="212.0" layoutY="14.0" mnemonicParsing="false" onAction="#toggleButtonPress" prefHeight="16.0" prefWidth="43.0" style="-fx-background-color: transparent;" text="Show" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="11.0" />
+                            </font>
+                        </ToggleButton>
+                        <Button fx:id="submitFinal" layoutX="8.0" layoutY="115.0" mnemonicParsing="false" onAction="#updateUserPassword" prefHeight="38.0" prefWidth="84.0" styleClass="custom-button" stylesheets="@../Buttons.css" text="Update" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <Button layoutX="196.0" layoutY="537.0" mnemonicParsing="false" onAction="#BackToLogIn" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: transparent;" text="Log in" textFill="#e21b70">
+                    <font>
+                        <Font name="Microsoft Sans Serif" size="16.0" />
+                    </font>
+                </Button>
+            <Label layoutX="122.0" layoutY="449.0" prefHeight="16.0" prefWidth="198.0" text="Once you forget your password" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="465.0" prefHeight="20.0" prefWidth="278.0" text="you can reset your password through email" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="106.0" layoutY="56.0" prefHeight="587.0" prefWidth="466.0">
+            <children>
+                <ImageView fitHeight="587.0" fitWidth="486.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/loginphoto.jpg" />
+               </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

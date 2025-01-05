@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="203.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e_shop.MessagesHandler.controller.LoginFormController">
+   <children>
+      <Text layoutX="42.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="227.0" layoutY="117.0" mnemonicParsing="false" onAction="#logInButtonOnAction" text="Button" />
+      <TextField fx:id="txtName" layoutX="178.0" layoutY="63.0" />
+   </children>
+</AnchorPane>

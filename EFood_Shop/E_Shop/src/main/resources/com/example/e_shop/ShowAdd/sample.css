@@ -1,0 +1,7 @@
+
+/* CSS for modifying rectangle radius */
+.rectangle {
+    /* Set the corner radius */
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}

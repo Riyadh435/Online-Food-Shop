@@ -1,0 +1,66 @@
+.login-bg{
+  -fx-background-color:    #D2D7F7;
+}
+.text-field{
+ -fx-background-color : transparent;
+  -fx-border-color : #FFFFFF;
+ -fx-border-width : 0px 0px 3px 0px;
+ -fx-text-fill: white;
+
+}
+
+.custom-button {
+   /* #F3407A*/
+  -fx-background-color: #E21B70;
+     -fx-text-fill: white;
+     -fx-background-radius:10px;
+}
+
+.custom-button:hover {
+    -fx-background-color: #9932CC;
+    -fx-text-fill:  black;
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color:white;
+}
+
+.custom-Othersbutton {
+     -fx-background-color: transparent;
+     -fx-text-fill: #262626;
+}
+.custom-Othersbutton:hover {
+    -fx-background-color:  #F3407A ;
+    -fx-text-fill:  white;
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color:white;
+}
+
+
+
+
+.custom-Label {
+     -fx-text-fill: white;
+     -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.0) , 0, 0.0 , 0 , 0);
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+}
+
+.custom-Label:hover {
+    -fx-text-fill:  black;
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color:white;
+     -fx-scale-x: 1.1; /* Increase size on hover */
+      -fx-scale-y: 1.1; /* Increase size on hover */
+
+}
+
+.custom-anchor-pane {
+  -fx-background-color: transparent;
+}
+
+
+
+
+

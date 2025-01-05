@@ -1,0 +1,32 @@
+.custom-button {
+  -fx-background-color:  #E21B70;
+     -fx-text-fill: white;
+     -fx-background-radius:10px;
+}
+
+.custom-button:hover {
+    -fx-background-color: #9932CC;
+    -fx-text-fill:  black;
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color:white;
+}
+
+
+.customForItem-Buttons{
+     -fx-background-color: #F3407A;
+     -fx-background-radius: 20px;
+     -fx-border-radius: 20px;
+     -fx-border-color: #F3407A;
+      -fx-border-width: 1px;;
+     -fx-font-size: 13px;
+      -fx-text-fill:  black;
+     -fx-font-weight: bold;
+}
+.customForItem-Buttons:hover {
+    -fx-background-color: black ;
+    -fx-text-fill:  white;
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color:white;
+}

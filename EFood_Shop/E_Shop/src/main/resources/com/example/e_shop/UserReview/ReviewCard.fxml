@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e_shop.UserReview.ReviewCard">
+   <children>
+      <AnchorPane fx:id="review_card" layoutX="10.0" layoutY="10.0" prefHeight="167.0" prefWidth="321.0" style="-fx-background-color: white; -fx-background-radius: 10 10 10 10;">
+         <children>
+            <Circle fx:id="profile_image" fill="DODGERBLUE" layoutX="35.0" layoutY="36.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="prod_image" fill="DODGERBLUE" layoutX="260.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="full_name" layoutX="78.0" layoutY="18.0" prefHeight="18.0" prefWidth="131.0" text="Label">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font></Label>
+            <VBox fx:id="commentvBox" layoutX="8.0" layoutY="100.0" prefHeight="62.0" prefWidth="279.0" />
+            <Label fx:id="rv_title" layoutX="53.0" layoutY="65.0" prefHeight="18.0" prefWidth="150.0" text="Label">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

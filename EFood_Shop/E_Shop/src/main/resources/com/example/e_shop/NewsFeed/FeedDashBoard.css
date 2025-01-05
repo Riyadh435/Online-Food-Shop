@@ -1,0 +1,7 @@
+.text-area {
+    -fx-pref-width: 400px; /* Set preferred width */
+    -fx-pref-height: 200px; /* Set preferred height */
+    -fx-max-width: 400px; /* Set maximum width */
+    -fx-max-height: 200px; /* Set maximum height */
+    -fx-wrap-text: true; /* Enable text wrapping */
+}

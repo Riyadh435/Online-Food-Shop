@@ -1,0 +1,122 @@
+
+.custom-button {
+    -fx-background-color: transparent;
+     -fx-text-fill: white;
+     -fx-font-size: 13px;
+      -fx-font-weight: bold;
+     -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.0) , 0, 0.0 , 0 , 0);
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+}
+
+.custom-button:hover {
+    -fx-background-color:   #F3407A;
+     -fx-background-radius:10px;
+    -fx-text-fill:  black;
+     -fx-border-style: solid inside;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color:white;
+}
+
+
+
+.custom-buttonForInventory {
+  -fx-background-color: #0081A7;
+  -fx-font-size: 14px;
+  -fx-text-fill: white;
+  -fx-background-radius: 20px 20px 20px 20px;
+  -fx-font-weight: bold;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-visibility: hidden;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-visibility: hidden;
+}
+
+.table-view {
+    -fx-border-color:  rgba(0, 0, 0, 0.4);
+    -fx-border-radius: 10px;
+    -fx-border-width: 3px; /* Border width */
+    -fx-font-size: 14px;
+}
+
+
+ /* this will change the color of table header */
+.table-view .column-header {
+    -fx-background-color:  rgba(0, 0, 0, 0.4);
+}
+/*
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+}
+*/
+.table-view .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-pref-height: 0;
+}
+
+
+.combo-box {
+    -fx-background-color: transparent;
+     -fx-font-family: 'Microsoft Sans Serif';
+    -fx-font-size: 14px;
+}
+.combo-box .list-cell {
+
+  -fx-border-color: rgba(0, 0, 0, 0.4);
+  -fx-border-width:2px;
+  -fx-border-radius: 5px 5px 5px 5px;
+
+}
+
+
+.custom-text-field{
+   -fx-background-color: transparent;
+   -fx-text-fill: black;
+   -fx-border-color: rgba(0, 0, 0, 0.4);
+   -fx-border-width:2px;
+   -fx-border-radius: 5px 5px 5px 5px;
+    -fx-font-family: 'Microsoft Sans Serif';
+    -fx-font-size: 14px;
+
+}
+
+.text-area {
+   -fx-background-color: transparent;
+   -fx-text-fill: black;
+   -fx-border-color: rgba(0, 0, 0, 0.4);
+   -fx-border-width:2px;
+   -fx-border-radius: 5px 5px 5px 5px;
+    -fx-wrap-text: true; /* Enable text wrapping */
+}
+
+.custom-Anchor:hover {
+         -fx-scale-x: 1.1; /* Increase size on hover */
+         -fx-scale-y: 1.1; /* Increase size on hover */
+
+}
+
+
+.custom-label{
+       -fx-font-family: 'Microsoft Sans Serif';
+       -fx-font-size: 14px;
+
+ }
+
+
+
+
+
+
